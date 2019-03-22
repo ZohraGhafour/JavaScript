@@ -1,0 +1,63 @@
+<html>
+<head>
+</head>
+
+<body>
+ <h1>Vikram's rectangle display</h1>
+ <h2>This page displays the different rectangles with different colors</h2>
+ 
+ <div style="padding: 50px 50px 0px 50px" id="rectangleWrapper">
+ 
+   <div class="rect" id="rectangle1" style=" width:200px; height:100px;background:#B1857C;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle2" style=" width:200px; height:100px;background:#21B726;"></div>
+   <label>#B1857C</label>
+ 
+ 
+   <div class="rect" id="rectangle3" style=" width:200px; height:100px;background:#B1857C;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle4" style=" width:200px; height:100px;background:#CFCF60;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle5" style=" width:200px; height:100px;background:#C6C61A;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle6" style=" width:200px; height:100px;background:#C61A66;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle7" style=" width:200px; height:100px;background:#11182C;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle8" style=" width:200px; height:100px;background:#1D4BC4;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle9" style=" width:200px; height:100px;background:#1D4BC4;"></div>
+   <label>#B1857C</label>
+ 
+   <div class="rect" id="rectangle10" style=" width:200px; height:100px;background:#C43B1D;"></div>
+   <label>#B1857C</label>
+ 
+ <div>  
+ 
+</body>
+
+<script type="text/javascript">
+   var querySelector = document.querySelector("#rectangleWrapper");
+   console.log("Here are the rectangle IDs");
+   for(var child of querySelector.childNodes){
+  if(child.nodeName === "DIV")
+  {
+   console.log(child.id);
+  }
+   }
+   var h1 = document.getElementsByTagName("h1");
+   
+   
+   var head = document.getElementsByTagName("head");
+   var title = document.createElement("title");
+   title.innerText = h1[0].innerText;    
+   head[0].appendChild(title);
+</script>
+</html>
