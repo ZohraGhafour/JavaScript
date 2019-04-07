@@ -1,0 +1,25 @@
+
+#error{
+color: #D8000C;
+    background-color: #FFD2D2;
+display: none;
+}
+
+#circle {
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
+  background: red;
+}
+
+#txtNewItem{
+	width: 200px;
+	height: 40px
+}
+
+#txtToDoItem{
+	width: 200px;
+	height: 40px
+}

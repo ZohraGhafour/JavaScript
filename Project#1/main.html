@@ -1,0 +1,86 @@
+
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+	<label id="error"></label>
+	<div id="divLoginControls" style="display:none">
+		<label>Hello </label>
+		<label id="lblUser"></label>
+		<button id="btnAccountDetails" style="width:150px; height:40px; position: absolute; right:100px">Account Details</button>
+		<button id="btnLogout" style="width:70px; height:40px; position: absolute; right:20px">Logout</button>
+	</div>
+	<div id="main">
+		<button id="login" style="width:70px; height:40px">Login</button>
+		<button id="logon" style="width:100px; height:40px">Sign Up</button>
+	</div>
+	<div id="divUserDetails" style="display:none">
+		<table>
+			<tr> 
+				<td>User Name:</td>
+				<td><input type="text" id="uName"><br><td>
+			</tr>
+			<tr> 
+				<td>Password</td>
+				<td><input type="password" id="pwd"><br><td>
+			</tr>
+			<tr> 
+				<td>First Name</td>
+				<td><input type="text" id="txtFName"><br><td>
+			</tr>
+			<tr> 
+				<td>Last Name</td>
+				<td><input type="text" id="txtLName"><br><td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td>
+					<input type="checkbox" id="chkTerms"></input>
+					<label for="chkTerms" id="forchkTerms">I agree to the Terms of Use</label>
+				<td>
+			</tr>
+			<tr> 
+				<td></td>
+				<td><button id="btnCreateUser" style="width:150px; height:40px">Create User</button><br><td>
+			</tr>
+		</table>
+	</div>
+	<div id="divlogin" style="display:none">
+	<table>
+		<tr> 
+			<td>User Name:</td>
+			<td><input type="text" id="inUserName"><br><td>
+		</tr>
+		<tr> 
+			<td>Password</td>
+			<td><input type="password" id="inPwd"><br><td>
+		</tr>
+		<tr> 
+			<td></td>
+			<td><button id="btnLogin" style="width:100px; height:40px">Login</button><br><td>
+		</tr>
+	</table>
+	</div>
+	<div id='divToDoList' style="display:none">
+		<label>To Do List: </label>
+		<ol id='olToDoList'>
+		</ol>
+		<br>
+		<button id="btnCreateToDoList" style="bottom:20; position: fixed; width:150px; height:40px">Create To Do List</button>
+	</div>
+	<div id='divListItems' style="display: none">
+		<div>
+			<label>List Name: </label>
+			<input type="text" id="txtListName" autocomplete='off'></input>
+		</div>
+		<ol id='olListItems'>
+		</ol>
+		<div style="bottom:20; position: fixed">
+			<button id="btnAddItem" style="width:150px; height=40px">Add Item</button>
+			<button id="btnSaveList" style="width:150px; height=40px">Save List</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="JavaScript.js"></script>
+</body>
+</html>
