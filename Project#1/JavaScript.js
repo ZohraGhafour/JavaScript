@@ -11,6 +11,12 @@
 	var divToDoList = document.getElementById('divToDoList');
 	let divUserDetails = document.getElementById("divUserDetails");
 	var divListItems = document.getElementById('divListItems')
+	var title = document.getElementById('title');
+
+
+	const first = "Vikram";
+	const last = "Chaudhary";
+	title.innerHTML = `This is ${first} ${last}'s first Javascript Project`;
 
 	var parsedUser;
 	logon.addEventListener("click",showLogon);
@@ -37,6 +43,10 @@
 	function Item(name, isDone){
 		this.name = name;
 		this.isDone = isDone
+	}
+
+	function Test(){
+		
 	}
 
 	function Logout(e){
@@ -70,6 +80,8 @@
 		}
 		else{
 			parsedUser = JSON.parse(storedUser);
+			const fName = parsedUser.fName;
+			const lName = parsedUser.lName;
 			if(parsedUser.password !== pwd.value)
 			{
 				errorMsg = "The password is not valid";
@@ -79,7 +91,7 @@
 				divLoginControls.style.display = 'block';
 				divToDoList.style.display = 'block';				
 				DisplayToDoList();
-				document.getElementById("lblUser").innerHTML = parsedUser.fName + ',' + parsedUser.lName;				
+				document.getElementById("lblUser").innerHTML = `Hello ${fName}, ${lName}. Welcome to my project`;				
 			}
 		} 
 	});
@@ -115,7 +127,7 @@
 			alert('User is Updated');
 			divToDoList.style.display = 'block';
 			divUserDetails.style.display = 'none';
-			document.getElementById("lblUser").innerHTML = parsedUser.fName + ',' + parsedUser.lName;	
+			document.getElementById("lblUser").innerHTML = `Hello ${fName}, ${lName}. Welcome to my project`;	
 		}
 		else{
 
